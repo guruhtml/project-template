@@ -1,0 +1,98 @@
+*,
+:after,
+:before {
+	@include box-sizing(border-box);
+}
+
+:active,
+:focus,
+:hover {
+	outline: 0;
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+}
+
+html {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.28;
+	min-width: 320px;
+	font-family: $font-default;
+	font-weight: 400;
+	color: $base-color;
+	-webkit-font-smoothing: antialiased;
+	background-color: $base-bg;
+}
+
+a {
+	text-decoration: none;
+	@include transition(color 0.3s ease);
+	color: #fff;
+
+	.no-touchevents &:hover {
+		text-decoration: none;
+	}
+}
+
+p {
+	margin: 15px 0;
+}
+
+p:empty {
+	display: none;
+}
+
+input {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.text-up {
+	text-transform: uppercase;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.svg-store {
+	display: none;
+	height: 0;
+	overflow: hidden;
+}
+
+.layout {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: $table-screen) {
+
+}
+
+@media (max-width: $mobile-screen) {
+
+}

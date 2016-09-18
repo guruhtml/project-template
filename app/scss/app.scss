@@ -1,0 +1,15 @@
+@import "blocks/vars";
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+
+@import "blocks/fonts";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/buttons";
+
+@import "pages/core";
+@import "pages/index";
+
+@import "plugins/slick";

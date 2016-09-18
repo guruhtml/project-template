@@ -1,0 +1,15 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = 'layout-home';
+
+block head
+	- var pageTitle = 'Project';
+
+block content
+
+	.text-center
+		h1 Project Template
+		p
+			svg.icon
+				use( xlink:href="#icon-user" )
